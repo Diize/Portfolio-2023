@@ -1,14 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { MantineProvider, Title, Center, Text, Stack } from '@mantine/core';
-import { BsArrowDown } from 'react-icons/bs';
-import { FaArrowDown } from 'react-icons/fa';
-
-import { Button, Container, Paper } from '@mantine/core';
-
-
-
-
+import Landing from './Components/Landing/Landing';
 function App() {
   return (
     <MantineProvider theme={{
@@ -17,16 +9,7 @@ function App() {
         'bright-pink': ['#F0BBDD', '#ED9BCF', '#EC7CC3', '#ED5DB8', '#F13EAF', '#F71FA7', '#FF00A1', '#E00890', '#C50E82', '#AD1374'],
       },
     }} withGlobalStyles withNormalizeCSS>
-      <Center mx="auto" className="main">
-        <Stack >
-          <Title order={1} className="title" color="ocean-blue">Hello, im Freddy! 👋</Title>
-          <Text>Welcome to my portfolio.</Text>
-        </Stack>
-        <div className='readmore'>
-          <Text>Learn more about me..</Text>
-          <FaArrowDown className='arrowdown' />
-        </div>
-      </Center>
+      
     </MantineProvider>
   );
 }
