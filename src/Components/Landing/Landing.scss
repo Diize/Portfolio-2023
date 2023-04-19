@@ -11,6 +11,17 @@
   display: none;
   /* Safari and Chrome */
 }
+.main {
+  width: 98vw;
+  min-height: 100vh;
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 5rem;
+  }
+
+  @media only screen and (min-width: 820px) {
+    min-height: 90vh;
+  }
+}
 
 .title {
   scale: 1.03;
@@ -27,17 +38,6 @@
   margin-left: 25px;
 }
 
-.main {
-
-  min-height: 100vh;
-  @media only screen and (max-width: 600px) {
-    padding-bottom: 5rem;
-  }
-
-  @media only screen and (min-width: 820px) {
-    min-height: 90vh;
-  }
-}
 
 #typewriterdiv {
   margin-top: 7.5rem;
