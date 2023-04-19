@@ -11,6 +11,7 @@ import {
   Button,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { useWindowSize } from '../../Utils/usewindowsize';
 import './Header.scss';
 
 const HEADER_HEIGHT = rem(60);
@@ -83,6 +84,12 @@ const useStyles = createStyles((theme) => ({
 
 export function HeaderAction() {
 
+  const deviceWidth = useWindowSize().width;
+  const isMobile = deviceWidth < 767;
+  // const isTablet = deviceWidth >= 600 && deviceWidth < 960;
+
+
+
   const links = [
     {
       label: 'Home',
@@ -117,10 +124,10 @@ export function HeaderAction() {
     >
       {
         active === link.label ?
-          <Button variant="light">
+          <Button variant="light" fullWidth={isMobile? true: false}>
             {link.label}
           </Button> :
-          <Button variant="light" color="gray">
+          <Button variant="light" color="gray" fullWidth={isMobile? true: false}>
             {link.label}
           </Button>
       }
