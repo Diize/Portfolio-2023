@@ -102,9 +102,9 @@ export function HeaderAction() {
     },
   ]
 
-  const [opened, { toggle, close }] = useDisclosure(false);
+  const [opened, { toggle }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].label);
-  const { classes, cx } = useStyles();
+  const { classes } = useStyles();
   const items = links.map((link) => (
     <a
       key={link.label}
