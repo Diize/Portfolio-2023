@@ -7,6 +7,7 @@ import { useWindowSize } from '../../Utils/usewindowsize';
 import MyTimeLine from '../Timeline/MyTimeLine';
 import { Link } from 'react-scroll';
 import Typewriter from 'typewriter-effect/dist/core';
+import VerticalSocials from '../VerticalSocials/VerticalSocials';
 
 
 const Landing = () => {
@@ -42,6 +43,7 @@ const Landing = () => {
     }} withGlobalStyles withNormalizeCSS>
       <HeaderAction />
       <div className='main'>
+        {!isMobile && <VerticalSocials />}
         <Center>
           <Title order={1} className="title">I'm <span style={{ color: '#7AD1DD' }}>Freddy</span>, a software developer! <span className='emoji'>👋</span></Title>
           <div id="typewriterdiv" style={{ position: 'absolute' }} />

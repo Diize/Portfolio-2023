@@ -17,9 +17,14 @@
   margin: auto;
   top: 0;
   left: 0;
+  margin-left: 46%;
   right: 0;
   bottom: 0;
    user-select: none;
+
+   @media only screen and (min-width: 600px) {
+    margin-left: 10.2%;
+  }
 }
 
 .logo b{

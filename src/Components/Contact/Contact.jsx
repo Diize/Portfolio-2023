@@ -26,10 +26,8 @@ const Contact = () => {
     }} withGlobalStyles withNormalizeCSS>
       <HeaderAction/>
       <div className='contact-main'>
-        <Box w={345} mb={55} ml={15}>
-          <Title order={1} className="title">Send me a <span style={{ color: '#7AD1DD' }}>email</span>! 📧</Title>
-        </Box>
         <Box w={300} mx="auto" >
+        <Title order={1} className="title">Send me a <span style={{ color: '#7AD1DD' }}>email</span>! 📧</Title>
           <form onSubmit={form.onSubmit((values) => console.log(values))}>
             <TextInput
               withAsterisk
@@ -47,7 +45,7 @@ const Contact = () => {
               size="xl"
             />
 
-            <Group position="right" mt="md">
+            <Group position="left" mt="md">
               <Button type="submit">Submit</Button>
             </Group>
           </form>

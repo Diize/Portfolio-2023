@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 * {
   -ms-overflow-style: none;
@@ -11,9 +12,11 @@
   display: none;
   /* Safari and Chrome */
 }
+
 .main {
   width: 98vw;
   min-height: 100vh;
+  margin-top: 7.5rem;
   @media only screen and (max-width: 600px) {
     padding-bottom: 5rem;
   }
@@ -25,15 +28,17 @@
 
 .title {
   scale: 1.03;
-  color: white;   
+  color: white;
   margin-left: 0rem;
+
   @media only screen and (max-width: 600px) {
     margin-left: 1rem;
   }
+
   font-weight: 800;
 }
 
-.subtext{
+.subtext {
   max-width: 600px;
   margin-left: 25px;
 }

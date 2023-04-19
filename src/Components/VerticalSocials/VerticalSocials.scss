@@ -1,0 +1,53 @@
+/*Vertical Social Icons*/
+
+ul.vertical-socials {
+    list-style-type: none;
+    padding: 0;
+    position: fixed;
+    left: 30px;
+    bottom: 30px
+}
+
+.social-icon-dribbble {
+    fill: #e9e9e9;
+    scale: 0.8;
+    margin-left: -5px;
+}
+
+ul.vertical-socials li.social-icon {
+    width: 15px;
+    margin: 40px 0;
+    position: relative
+}
+
+ul.vertical-socials li.social-icon svg {
+    fill: #e9e9e9;
+}
+
+.circle:hover {
+    /* calculate using: (2 * PI * R) */
+    stroke-dasharray: 227;
+    stroke-dashoffset: 0;
+    animation-iteration-count: infinite;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes rotate {
+    to {
+        stroke-dashoffset: 227;
+    }
+}
+
+.another-circle {
+    stroke-dasharray: 227;
+    stroke-dashoffset: 227;
+    transition: stroke-dashoffset 2s linear;
+}
+
+.another-circle:hover {
+    stroke-dashoffset: 0;
+}
