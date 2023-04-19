@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.scss'
 import { MantineProvider } from '@mantine/core'
-import { TextInput, Checkbox, Button, Group, Box, Title, Input } from '@mantine/core';
+import { TextInput, Button, Group, Box, Title } from '@mantine/core';
 import { FaPencilAlt } from 'react-icons/fa';
 import { useForm } from '@mantine/form';
 import { HeaderAction } from '../Header/Header';
@@ -16,10 +16,6 @@ const Contact = () => {
       email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
     },
   });
-
-
-
-
 
   return (
     <MantineProvider theme={{

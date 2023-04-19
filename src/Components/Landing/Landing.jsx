@@ -1,6 +1,6 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import './Landing.scss';
-import { MantineProvider, Title, Center, Text, Stack, Button, Image, Box } from '@mantine/core';
+import { MantineProvider, Title, Center, Text, Stack, Button, Image } from '@mantine/core';
 import { FaArrowDown } from 'react-icons/fa';
 import { HeaderAction } from '../Header/Header';
 import { useWindowSize } from '../../Utils/usewindowsize';
@@ -12,7 +12,7 @@ import Typewriter from 'typewriter-effect/dist/core';
 const Landing = () => {
   const deviceWidth = useWindowSize().width;
   const isMobile = deviceWidth < 767;
-  const isTablet = deviceWidth >= 600 && deviceWidth < 960;
+  // const isTablet = deviceWidth >= 600 && deviceWidth < 960;
 
   var app = document.getElementById('typewriterdiv');
   var typewriter = new Typewriter(app, {

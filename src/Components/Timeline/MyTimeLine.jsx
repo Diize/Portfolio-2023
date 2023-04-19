@@ -4,12 +4,12 @@ import { FaCode } from 'react-icons/fa';
 import { FaUserGraduate } from 'react-icons/fa';
 import './MyTimeLine.scss'
 import { useWindowSize } from '../../Utils/usewindowsize';
-import { MantineProvider, Text, Timeline, Center, Title, Box, Image } from '@mantine/core';
+import { MantineProvider, Text, Timeline, Center, Image } from '@mantine/core';
 
 const MyTimeLine = () => {
   const deviceWidth = useWindowSize().width;
   const isMobile = deviceWidth < 767;
-  const isTablet = deviceWidth >= 600 && deviceWidth < 960;
+  // const isTablet = deviceWidth >= 600 && deviceWidth < 960;
 
   const renderTimeLine = () => {
     return (

@@ -1,7 +1,5 @@
 import {
   createStyles,
-  Menu,
-  Center,
   Header,
   Container,
   Group,
