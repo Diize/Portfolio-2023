@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
 
 .linkLabel {
-    font-weight: 800 !important;
+  font-weight: 800 !important;
+}
+
+.header {
+  z-index: 3;
+  position: relative
 }
 
 .icon {
   transform: rotate(280deg);
   display: inline-block;
 }
-
 
 .logo {
   text-align: center;
@@ -20,54 +24,64 @@
   margin-left: 46%;
   right: 0;
   bottom: 0;
-   user-select: none;
+  user-select: none;
 
-   @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 600px) {
     margin-left: 10.2%;
   }
 }
 
-.logo b{
+.logo b {
   font-size: 30px;
   color: #fee;
   font-family: 'Vibur', cursive;
   cursor: pointer;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #1F51FF, 0 0 0.5em #1F51FF, 0 0 0.1em #1F51FF, 0 10px 3px #000;
 }
-.logo b span{
+
+.logo b span {
   animation: blink linear infinite 2s;
 }
-.logo b span:nth-of-type(2){
+
+.logo b span:nth-of-type(2) {
   animation: blink linear infinite 3s;
 }
+
 @keyframes blink {
   78% {
     color: inherit;
     text-shadow: inherit;
   }
-  79%{
-     color: #333;
+
+  79% {
+    color: #333;
   }
+
   80% {
-    
+
     text-shadow: none;
   }
+
   81% {
     color: inherit;
     text-shadow: inherit;
   }
+
   82% {
     color: #333;
     text-shadow: none;
   }
+
   83% {
     color: inherit;
     text-shadow: inherit;
   }
+
   92% {
     color: #333;
     text-shadow: none;
   }
+
   92.5% {
     color: inherit;
     text-shadow: inherit;

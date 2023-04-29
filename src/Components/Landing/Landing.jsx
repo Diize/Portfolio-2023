@@ -51,7 +51,7 @@ const Landing = () => {
         <Stack align="center" spacing="lg">
           <Image maw={550} mx="auto" radius="md" mt={50} src="https://i.imgur.com/F2TPAIi.gif" alt="Intro Pic" className="programmerphoto" />
           <Text className='subtext'>This is my personal space where i share my experiences, my knowledge, my prior projects and everything in between! Click below to find out more about me! 👇</Text>
-          <Link to="mytimelineWrapper" smooth={true} duration={1000} offset={!isMobile? -300: -100}>
+          <Link to="mytimelineWrapper" smooth={true} duration={1000} offset={!isMobile ? -300 : -100}>
             <Button variant="outline" radius="xs" size="md" rightIcon={<FaArrowDown />} sx={{ color: '#7AD1DD', borderColor: 'white' }} >
               Learn more about me.
             </Button>
@@ -59,7 +59,7 @@ const Landing = () => {
         </Stack>
       </div>
       <div id="mytimelineWrapper">
-       <MyTimeLine/>
+        <MyTimeLine />
       </div>
     </MantineProvider>
   )

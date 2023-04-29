@@ -6,6 +6,13 @@
     flex-direction: column;
 
     .title {
+        width: 450px;
+        scale: 0.85;
+        margin-left: -1.2rem;
+
+    @media only screen and (min-width: 600px) {
+        margin-left: 0;
         width: 500px;
+    }
     }
 }

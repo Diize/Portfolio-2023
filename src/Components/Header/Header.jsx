@@ -124,10 +124,10 @@ export function HeaderAction() {
     >
       {
         active === link.label ?
-          <Button variant="light" fullWidth={isMobile? true: false}>
+          <Button variant="light" fullWidth={isMobile ? true : false}>
             {link.label}
           </Button> :
-          <Button variant="light" color="gray" fullWidth={isMobile? true: false}>
+          <Button variant="light" color="gray" fullWidth={isMobile ? true : false}>
             {link.label}
           </Button>
       }
@@ -135,15 +135,13 @@ export function HeaderAction() {
   ));
 
   return (
-    <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
+    <Header height={HEADER_HEIGHT} className='header'>
       <Container className={classes.header}>
-        <div className="logo"><b>F<span>L</span></b></div>
+        <a href="/"><div className="logo"><b>F<span>L</span></b></div></a>
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>
-
         <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
-
         <Transition transition="pop-top-right" duration={200} mounted={opened}>
           {(styles) => (
             <Paper className={classes.dropdown} withBorder style={styles}>

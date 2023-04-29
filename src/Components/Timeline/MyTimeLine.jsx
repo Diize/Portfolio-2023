@@ -5,6 +5,7 @@ import { FaUserGraduate } from 'react-icons/fa';
 import './MyTimeLine.scss'
 import { useWindowSize } from '../../Utils/usewindowsize';
 import { MantineProvider, Text, Timeline, Center, Image } from '@mantine/core';
+import selfie from './selfie.jpg';
 
 const MyTimeLine = () => {
   const deviceWidth = useWindowSize().width;
@@ -43,7 +44,7 @@ const MyTimeLine = () => {
         <div className='timelineMain'>
           <Image
             radius="md"
-            src="https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/240454324_10223267281982626_2831493444717198091_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Bq8kZJNs2aEAX-ZjxzG&_nc_ht=scontent-arn2-1.xx&oh=00_AfAgHQVl31RbtqYUDjt864lZeBieUa4i7je55UaXmEcKww&oe=644336D3"
+            src={selfie}
             alt="me.jpg"
             height={!isMobile? 500: 430}
             width={!isMobile? 400: 330}
